@@ -157,3 +157,13 @@ li{
   font-size: 10rem;
   opacity: .3;
 }
+
+.aboutHeading h6{
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.profileImage{
+  flex: 1;
+  margin-right: 5rem;
+}
