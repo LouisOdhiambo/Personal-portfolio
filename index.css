@@ -59,8 +59,15 @@ li{
   margin: 0 2rem;
 }
 
-navLink{
+.navLink{
   font-size: 5rem;
   padding: 1rem;
   font-family: 'The Historia Demo', sans-serif;
+}
+
+.navLink:hover, 
+.navLink:focus{
+  background: linear-gradient(to top, #ffe838, #fd57bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
