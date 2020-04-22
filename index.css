@@ -48,4 +48,19 @@ header{
 
 .navList{
   list-style: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li{
+  margin: 0 2rem;
+}
+
+navLink{
+  font-size: 5rem;
+  padding: 1rem;
+  font-family: 'The Historia Demo', sans-serif;
 }
