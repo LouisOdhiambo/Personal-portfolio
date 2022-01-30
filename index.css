@@ -330,6 +330,11 @@ li{
   color: #2f67cd;
 }
 
+.portfolioDescription a{
+  color: rgb(231, 228, 24);
+  font-size: medium;
+}
+
 .contact{
   background-color: #221e3f;
 }
