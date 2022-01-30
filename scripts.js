@@ -1,4 +1,5 @@
 $(document).ready(function (){
+
     $('.menuTogler').on ('click', function (){
       $(this).toggleClass('open');
       $('.navBar').toggleClass('open');
@@ -25,5 +26,6 @@ $(document).ready(function (){
       easing:'ease',
       duration: 1800
     });
+
 
 });

@@ -38,7 +38,8 @@
     </nav>
     <div class="landingText">
       <h1>LOUIS ODHIAMBO</h1>
-      <h6>android developer</h6>
+      <h6 id="typewriter"> Android developer and Web developer </h6>
+      
     </div>
   </header>
 
@@ -192,11 +193,24 @@ So far I have JavaScript, HTML, CSS, bootstrap, jQuery, postgreSQL, Java, spark,
     <p>&copy 2020 Louis Odhiambo</p>
   </footer>
 
-
-
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
+    <script>
+    let i = 0;
+    let target = document.getElementById("typewriter"), ;
+    let text = target.innerHTML;
+    target.innerHTML = ' ';
+    let speed = 75;
+
+    typeWriter();
+    function typeWriter() {
+        if (i < text.length) {
+            target.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+    </script>
 </body>
 </html>
