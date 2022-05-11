@@ -206,6 +206,11 @@ li{
   font-size: 4rem;
 }
 
+#app{
+  color: goldenrod;
+  font-family: 'Cormorant Garamond', serif;
+}
+
 .about .container{
   display: flex;
   align-items: center;

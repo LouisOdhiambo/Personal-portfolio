@@ -42,4 +42,27 @@ $(document).ready(function (){
             setTimeout(typeWriter, speed);
         }
     }
+
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Hello there!')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('I specialize in Java')
+    .pauseFor(2000)
+    .deleteChars(4)
+    .typeString('Kotlin')
+    .pauseFor(2000)
+    .deleteChars(6)
+    .typeString('and flutter')
+    .pauseFor(2000)
+    .deleteAll()
+    .typeString('You can find more below')
+    .pauseFor(2500)
+    .start();
+
 });
