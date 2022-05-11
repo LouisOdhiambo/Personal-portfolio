@@ -265,6 +265,7 @@ li{
   text-align: center;
 }
 
+
 .skill{
   display: flex;
   flex-direction: column;
@@ -414,3 +415,162 @@ input[type="submit"]{
   }
 }
 
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  {
+.landingText h1{
+  color: goldenrod;
+  font-size: xx-large;
+}
+.navList{
+  list-style: none;
+  display: inline-block;
+  align-items: center;
+}
+
+.about .container{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileImage{
+  margin-right: 5rem;
+  height: 500px;
+  width: 250px;
+}
+
+.portfolioItem{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  { 
+.landingText h1{
+  color: goldenrod;
+  font-size: xx-large;
+}
+
+.navList{
+  list-style: none;
+  display: inline-block;
+  align-items: center;
+}
+
+.about .container{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileImage{
+  margin-right: 5rem;
+  height: 500px;
+  width: 250px;
+}
+
+.portfolioItem{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+ }
+
+ /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  {
+.landingText h1{
+  color: goldenrod;
+  font-size: xx-large;
+}
+
+.navList{
+  list-style: none;
+  display: inline-block;
+  align-items: center;
+}
+
+.about .container{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileImage{
+  margin-right: 5rem;
+  height: 500px;
+  width: 250px;
+}
+
+.portfolioItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  { 
+.landingText h1{
+  color: goldenrod;
+}
+
+.navList{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.about .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolioItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+ }
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) { 
+.landingText h1{
+  color: goldenrod;
+}
+
+.navList{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.about .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolioItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+ }
+
+ /* hi-res laptops and desktops */ 
+ @media (min-width:1281px) { 
+  .services{
+  margin-top: 120px;
+}
+ }
