@@ -1,16 +1,16 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 10px;
   font-family: 'Roboto', sans-serif;
   color: #eee;
 }
 
-body{
+body {
   width: 100%;
   height: 100%;
   background: url("images/portfolioBg.jpeg") no-repeat center fixed;
@@ -18,25 +18,25 @@ body{
   color: white;
 }
 
-section{
+section {
   padding: 6rem 0;
 }
 
-a{
+a {
   text-decoration: none;
   color: #eee;
 }
 
-p{
+p {
   font-size: 1.8rem;
   font-weight: 300;
 }
 
-img{
+img {
   width: 100%;
 }
 
-.container{
+.container {
   width: 90%;
   max-width: 120rem;
   height: 100%;
@@ -44,12 +44,12 @@ img{
   position: relative;
 }
 
-.sectionHeading{
+.sectionHeading {
   text-align: center;
   margin-bottom: 10rem;
 }
 
-.sectionHeading h1{
+.sectionHeading h1 {
   font-size: 3.5rem;
   color: rgba(255, 255, 255, .3);
   text-transform: uppercase;
@@ -58,13 +58,12 @@ img{
   margin-bottom: 1rem;
 }
 
-.sectionHeading h6{
+.sectionHeading h6 {
   font-size: 1.6rem;
   font-weight: 300;
 }
 
-.sectionHeading h1::before
-.sectionHeading h1::after{
+.sectionHeading h1::before .sectionHeading h1::after {
   content: '';
   position: absolute;
   bottom: -.5rem;
@@ -73,29 +72,29 @@ img{
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-.sectionHeading h1 ::before{
+.sectionHeading h1 ::before {
   width: 10rem;
   height: 3px;
   border-radius: .8rem;
 }
 
-.sectionHeading h1 ::after{
+.sectionHeading h1 ::after {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 100%;
   bottom: -1rem;
 }
 
-.has-margin-right{
+.has-margin-right {
   margin-right: 5rem;
 }
 
-header{
+header {
   width: 100%;
   height: 100vh;
 }
 
-.navBar{
+.navBar {
   width: 100%;
   height: 100vh;
   top: -100vh;
@@ -107,7 +106,7 @@ header{
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
 
-.navList{
+.navList {
   list-style: none;
   height: 100%;
   width: 100%;
@@ -116,29 +115,29 @@ header{
   align-items: center;
 }
 
-li{
+li {
   margin: 0 2rem;
 }
 
-.navLink{
+.navLink {
   font-size: 5rem;
   padding: 1rem;
   font-family: 'The Historia Demo', sans-serif;
 }
 
-.navLink:hover, 
-.navLink:focus{
+.navLink:hover,
+.navLink:focus {
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.navBar.open{
+.navBar.open {
   top: 0;
   border-radius: initial;
 }
 
-.menuTogler{
+.menuTogler {
   position: absolute;
   top: 5rem;
   right: 5rem;
@@ -152,41 +151,45 @@ li{
   transition: transform 650ms ease-out;
 }
 
-.menuTogler.open{
+.services {
+  margin-top: 1rem;
+}
+
+.menuTogler.open {
   transform: rotate(-450deg);
 }
 
-.bar{
+.bar {
   background: linear-gradient(to right, #ffe838, #fd57bf);
   width: 100%;
   height: 4px;
   border-radius: .8rem;
 }
 
-.bar.half{
+.bar.half {
   width: 50%;
 }
 
-.bar.start{
+.bar.start {
   transform-origin: right;
   transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
 
-.open.bar.start{
+.open.bar.start {
   transform: rotate(-450deg) translateX(.8rem);
 }
 
-.bar.end{
+.bar.end {
   align-self: flex-end;
   transform-origin: left;
   transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
 
-.open.bar.end{
+.open.bar.end {
   transform: rotate(-450deg) translateX(-.8rem);
 }
 
-.landingText{
+.landingText {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -196,68 +199,68 @@ li{
   z-index: 1;
 }
 
-.landingText h1{
+.landingText h1 {
   font-size: 13rem;
   font-family: fantasy;
   color: goldenrod;
 }
 
-.landingText h6{
+.landingText h6 {
   font-size: 4rem;
 }
 
-#app{
+#app {
   color: goldenrod;
   font-family: 'Cormorant Garamond', serif;
 }
 
-.about .container{
+.about .container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.aboutHeading h1{
+.aboutHeading h1 {
   font-size: 10rem;
   opacity: .3;
 }
 
-.aboutHeading h6{
+.aboutHeading h6 {
   font-size: 2rem;
   font-weight: 300;
 }
 
-.profileImage{
+.profileImage {
   flex: 1;
   margin-right: 5rem;
 }
 
-.aboutDetails{
+.aboutDetails {
   flex: 1;
 }
 
-.socialMedia{
+.socialMedia {
   margin-top: 5rem;
 }
 
-.socialMedia i{
+.socialMedia i {
   font-size: 5rem;
   transition: color 650ms;
 }
 
-.fa-instagram :hover{
+.fa-instagram :hover {
   color: deeppink;
 }
 
-.fa-facbook :hover{
+.fa-facbook :hover {
   color: deeppink;
 }
 
-.fa-linkedin :hover{
+.fa-linkedin :hover {
   color: deeppink;
 }
 
-.mySkills{
+.mySkills {
   margin-top: 10rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -266,7 +269,7 @@ li{
 }
 
 
-.skill{
+.skill {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,13 +277,13 @@ li{
   padding: 2rem;
 }
 
-.skill h1{
+.skill h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 2rem -2px 2rem 0;
 }
 
-.iconContainer{
+.iconContainer {
   width: 10rem;
   height: 10rem;
   margin-bottom: 2rem;
@@ -289,41 +292,41 @@ li{
   transform: rotate(45deg);
 }
 
-.iconContainer i{
+.iconContainer i {
   margin: auto;
   transform: rotate(-45deg);
 }
 
-.portfolioItem{
+.portfolioItem {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 5rem;
 }
 
-.portfolioItem:last-child{
+.portfolioItem:last-child {
   margin-bottom: 0;
 }
 
-.profileImage{
+.profileImage {
   flex: 1;
   width: 50rem;
 }
 
-.portfolioDescription h1{
+.portfolioDescription h1 {
   font-size: 3rem;
   font-weight: 300;
   margin: 1rem 0;
 }
 
-.portfolioDescription h6{
+.portfolioDescription h6 {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 300;
   opacity: 0.3;
 }
 
-.portfolioDescription .cta{
+.portfolioDescription .cta {
   display: inline-block;
   margin-top: 2.5rem;
   font-size: 1.5rem;
@@ -332,30 +335,30 @@ li{
   transition: color 650ms;
 }
 
-.portfolioDescription .cta:hover{
+.portfolioDescription .cta:hover {
   color: #2f67cd;
 }
 
-.portfolioDescription a{
+.portfolioDescription a {
   color: rgb(231, 228, 24);
   font-size: medium;
 }
 
-.contact{
+.contact {
   background-color: #221e3f;
 }
 
-form{
+form {
   width: 70%;
   margin: 0 auto;
 }
 
-form label{
+form label {
   font-size: 1.5rem;
 }
 
 input,
-textarea{
+textarea {
   width: 100%;
   padding: 1rem;
   margin-bottom: 5px;
@@ -363,7 +366,7 @@ textarea{
   outline-color: #fd57bf;
 }
 
-input[type="submit"]{
+input[type="submit"] {
   width: initial;
   color: #eee;
   background-color: goldenrod;
@@ -373,7 +376,7 @@ input[type="submit"]{
   transition: background-color 650ms;
 }
 
-.copyRight{
+.copyRight {
   width: 100%;
   text-align: center;
   padding: 2rem 0;
@@ -381,7 +384,7 @@ input[type="submit"]{
   position: relative;
 }
 
-.up{
+.up {
   position: absolute;
   width: 5rem;
   height: 5rem;
@@ -393,184 +396,187 @@ input[type="submit"]{
   animation: pulse 2s infinite;
 }
 
-.up i{
+.up i {
   color: #16162d;
   font-size: 2rem;
   margin: auto;
 }
 
-.copyRight p{
+.copyRight p {
   font-size: 1.4rem;
 }
 
 @keyframes pulse {
-  0%{
-      box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+  0% {
+    box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
   }
-  70%{
+
+  70% {
     box-shadow: 0 0 0 0 2rem rgba(253, 87, 191, 0);
   }
-  100%{
+
+  100% {
     box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
   }
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
-@media (min-width:320px)  {
-.landingText h1{
-  color: goldenrod;
-  font-size: xx-large;
-}
-.navList{
-  list-style: none;
-  display: inline-block;
-  align-items: center;
-}
+@media (min-width:320px) {
+  .landingText h1 {
+    color: goldenrod;
+    font-size: xx-large;
+  }
 
-.about .container{
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-}
+  .navList {
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+  }
 
-.profileImage{
-  margin-right: 5rem;
-  height: 500px;
-  width: 250px;
-}
+  .about .container {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
 
-.portfolioItem{
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5rem;
-}
+  .profileImage {
+    margin-right: 5rem;
+    height: 500px;
+    width: 250px;
+  }
+
+  .portfolioItem {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
 
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-@media (min-width:481px)  { 
-.landingText h1{
-  color: goldenrod;
-  font-size: xx-large;
+@media (min-width:481px) {
+  .landingText h1 {
+    color: goldenrod;
+    font-size: xx-large;
+  }
+
+  .navList {
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+  }
+
+  .about .container {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profileImage {
+    margin-right: 5rem;
+    height: 500px;
+    width: 250px;
+  }
+
+  .portfolioItem {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
 }
 
-.navList{
-  list-style: none;
-  display: inline-block;
-  align-items: center;
-}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) {
+  .landingText h1 {
+    color: goldenrod;
+    font-size: xx-large;
+  }
 
-.about .container{
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-}
+  .navList {
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+  }
 
-.profileImage{
-  margin-right: 5rem;
-  height: 500px;
-  width: 250px;
-}
+  .about .container {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
 
-.portfolioItem{
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5rem;
-}
+  .profileImage {
+    margin-right: 5rem;
+    height: 500px;
+    width: 250px;
+  }
 
- }
-
- /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (min-width:641px)  {
-.landingText h1{
-  color: goldenrod;
-  font-size: xx-large;
-}
-
-.navList{
-  list-style: none;
-  display: inline-block;
-  align-items: center;
-}
-
-.about .container{
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-}
-
-.profileImage{
-  margin-right: 5rem;
-  height: 500px;
-  width: 250px;
-}
-
-.portfolioItem{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5rem;
-}
+  .portfolioItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
 
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
-@media (min-width:961px)  { 
-.landingText h1{
-  color: goldenrod;
-}
+@media (min-width:961px) {
+  .landingText h1 {
+    color: goldenrod;
+  }
 
-.navList{
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
+  .navList {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
 
-.about .container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.portfolioItem{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5rem;
+  .portfolioItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
 }
- }
 
 /* big landscape tablets, laptops, and desktops */
-@media (min-width:1025px) { 
-.landingText h1{
-  color: goldenrod;
+@media (min-width:1025px) {
+  .landingText h1 {
+    color: goldenrod;
+  }
+
+  .navList {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolioItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
 }
 
-.navList{
-  list-style: none;
-  display: flex;
-  align-items: center;
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+  .services {
+    margin-top: 120px;
+  }
 }
-
-.about .container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.portfolioItem{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5rem;
-}
- }
-
- /* hi-res laptops and desktops */ 
- @media (min-width:1281px) { 
-  .services{
-  margin-top: 120px;
-}
- }
